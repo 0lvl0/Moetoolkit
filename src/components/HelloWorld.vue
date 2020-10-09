@@ -1,20 +1,29 @@
 <template>
   <div class="LandingPage">
+    <div class='User'>
+      <div></div>
+    </div>
     <div class='LogoRow'>
       <div class='MoeLogo'>
         <img class='images' alt="Moe logo" src="../assets/MoeLogo.png">
       </div>
     </div>
+    <!-- 主页入口选择 -->
     <div class='Entry'>
-      <div class='EntryButton'></div>
-      <div class='EntryButton'></div>
+      <div class='EntryButton'>这是面向日常使用的工具</div>
+      <div class='EntryButton'>这是测试中的新奇工具</div>
     </div>
+    <!-- 小图标排布 -->
     <div class='icons'>
       <div class='iconsButton'></div>
       <div class='iconsButton'></div>
       <div class='iconsButton'></div>
       <div class='iconsButton'></div>
       <div class='iconsButton'></div>
+    </div>
+    <!-- 底部备案信息 -->
+    <div class='BottomRow'>
+      <div class='BottomMsg'>ICP1949024916</div>
     </div>
   </div>
 </template>
@@ -33,6 +42,15 @@ export default {
   .LandingPage {
     height: 100%;
     width: 100%;
+  }
+  .User {
+    position: fixed;
+    top: 25px;
+    left: 25px;
+    height: 60px;
+    width: 60px;
+    background-color:black;
+    border-radius: 50px;
   }
   .LogoRow {
     width:100%;
@@ -56,10 +74,15 @@ export default {
     // background-color: black;
   }
   .EntryButton {
-    display: inline-flexbox;
+    display: inline-flex;
     width: 316px;
     height: 58px;
-    background-color: aqua;
+    justify-content: space-around;
+    align-items: center;
+    // background-color: aqua;
+    border-style: solid;
+    border-width:1px;
+    border-color: #999999;
   }
   .icons {
     display: flex;
@@ -73,5 +96,20 @@ export default {
     height: 55px;
     width: 55px;
     background-color: aqua;
+  }
+  .BottomRow {
+    position: fixed;
+    bottom: 20px;
+    width: 100%;
+    height: 40px;
+    // background-color:black;
+  }
+  .BottomMsg {
+    display: inline-flex;
+    height: 40px;
+    width: 464px;
+    justify-content: space-around;
+    align-items: center;
+    // background-color:aqua;
   }
 </style>
