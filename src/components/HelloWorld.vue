@@ -10,8 +10,8 @@
     </div>
     <!-- 主页入口选择 -->
     <div class='Entry'>
-      <div class='EntryButton'>这是面向日常使用的工具</div>
-      <div class='EntryButton'>这是测试中的新奇工具</div>
+      <div class='EntryButton'>这是日常使用工具</div>
+      <div class='EntryButton'>这是测试中的工具</div>
     </div>
     <!-- 小图标排布 -->
     <div class='icons'>
@@ -23,7 +23,7 @@
     </div>
     <!-- 底部备案信息 -->
     <div class='BottomRow'>
-      <div class='BottomMsg'>ICP1949024916</div>
+      <div class='BottomMsg'>蜀ICP备2020026781号</div>
     </div>
   </div>
 </template>
