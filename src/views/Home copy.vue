@@ -1,6 +1,7 @@
 <template>
   <div class="home">
     <div>
+      <img class='MoeLogo' alt="Vue logo" src="../assets/MoeLogo.png">
       <HelloWorld/>
     </div>
   </div>
@@ -17,3 +18,11 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+  .MoeLogo {
+    display: block;
+    height: 180px;
+    width: 180px;
+  }
+</style>

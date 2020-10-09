@@ -1,10 +1,6 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <router-view class=''/>
   </div>
 </template>
 
@@ -25,14 +21,26 @@ body {
   height:100%;			//大小设置为100%
   position:fixed;
   background-size:100% 100%;
+  // .FocusBody {
+  //   display: block;
+  //   position: fixed;
+  //   left: 90px;
+  //   width: calc(100% - 90px);
+  // }
 }
+#LeftSideBar {
+  position: fixed;
+  padding: 0px;
+  left: 0px;
+  width: 80px;
 
-#nav {
-  padding: 30px;
-
-  a {
+  .side-bar {
     font-weight: bold;
     color: #2c3e50;
+    display: block;
+    padding: 40px 20px;
+    // height: 50px;
+    width: 50px;
 
     &.router-link-exact-active {
       color: #42b983;

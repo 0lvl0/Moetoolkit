@@ -1,31 +1,21 @@
 <template>
-  <div class="hello">
-    <p>
-      For a guide and recipes on how to configure / customize this project,<br>
-      check out the
-      <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
-    </p>
-    <h3>Installed CLI Plugins</h3>
-    <ul>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank" rel="noopener">babel</a></li>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-router" target="_blank" rel="noopener">router</a></li>
-    </ul>
-    <h3>Essential Links</h3>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank" rel="noopener">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank" rel="noopener">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank" rel="noopener">Twitter</a></li>
-      <li><a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a></li>
-    </ul>
-    <h3>Ecosystem</h3>
-    <ul>
-      <li><a href="https://router.vuejs.org" target="_blank" rel="noopener">vue-router</a></li>
-      <li><a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a></li>
-      <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank" rel="noopener">vue-devtools</a></li>
-      <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
-    </ul>
+  <div class="LandingPage">
+    <div class='LogoRow'>
+      <div class='MoeLogo'>
+        <img class='images' alt="Moe logo" src="../assets/MoeLogo.png">
+      </div>
+    </div>
+    <div class='Entry'>
+      <div class='EntryButton'></div>
+      <div class='EntryButton'></div>
+    </div>
+    <div class='icons'>
+      <div class='iconsButton'></div>
+      <div class='iconsButton'></div>
+      <div class='iconsButton'></div>
+      <div class='iconsButton'></div>
+      <div class='iconsButton'></div>
+    </div>
   </div>
 </template>
 
@@ -39,19 +29,49 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss">
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
+<style lang="scss">
+  .LandingPage {
+    height: 100%;
+    width: 100%;
+  }
+  .LogoRow {
+    width:100%;
+  }
+  .MoeLogo {
+    display: flex;
+    margin: 250px auto 31px;
+    height: 180px;
+    width: 180px;
+  }
+  .images {
+    height: 100%;
+    width: 100%;
+  }
+  .Entry {
+    display: flex;
+    justify-content: space-between;
+    height: 58px;
+    width: 701px;
+    margin: 31px auto 45px;
+    // background-color: black;
+  }
+  .EntryButton {
+    display: inline-flexbox;
+    width: 316px;
+    height: 58px;
+    background-color: aqua;
+  }
+  .icons {
+    display: flex;
+    justify-content: space-between;
+    height: 55px;
+    width: 459px;
+    margin: 45px auto 0px;
+    // background-color: black;
+  }
+  .iconsButton {
+    height: 55px;
+    width: 55px;
+    background-color: aqua;
+  }
 </style>
