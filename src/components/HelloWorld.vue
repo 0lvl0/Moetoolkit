@@ -5,7 +5,7 @@
     </div>
     <div class='LogoRow'>
       <div class='MoeLogo'>
-        <img class='images' alt="Moe logo" src="../assets/MoeLogo.png">
+        <img class='images' alt="Moe logo" src="../assets/MoeToolkit.svg">
       </div>
     </div>
     <!-- 主页入口选择 -->
