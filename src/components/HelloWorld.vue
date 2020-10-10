@@ -40,8 +40,15 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss">
   .LandingPage {
+    position: fixed;
     height: 100%;
     width: 100%;
+    // background-image: url(https://qvq-1255614900.file.myqcloud.com/background/img/IMG_2804.JPG);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #464646;
   }
 
   // 用户头像
@@ -96,6 +103,15 @@ export default {
     border-style: solid;
     border-width:1px;
     border-color: #999999;
+    color: wheat;
+  }
+  .EntryButton:hover{
+    background-color:gray;
+    transition: background-color 0.2s linear;
+    color: white;
+    border-style: solid;
+    border-width:1px;
+    border-color: #bed82e;
   }
 
   // 小图标入口行
@@ -114,7 +130,7 @@ export default {
   .iconsButton {
     height: 45px;
     width: 45px;
-    background-color: aqua;
+    // background-color: aqua;
   }
 
   // 底边栏行
@@ -134,6 +150,7 @@ export default {
     width: auto;
     justify-content: space-around;
     align-items: center;
+    color: white;
     // background-color:aqua;
   }
 </style>
