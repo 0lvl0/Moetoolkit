@@ -43,6 +43,7 @@ export default {
     height: 100%;
     width: 100%;
   }
+  // 用户头像
   .User {
     position: fixed;
     top: 25px;
@@ -55,9 +56,10 @@ export default {
   .LogoRow {
     width:100%;
   }
+  // 主图标
   .MoeLogo {
     display: flex;
-    margin: 250px auto 31px;
+    margin: 171px auto 31px;
     height: 180px;
     width: 180px;
   }
@@ -65,16 +67,23 @@ export default {
     height: 100%;
     width: 100%;
   }
+  // 入口按钮行
   .Entry {
     display: flex;
+    // flex-flow: column;
     justify-content: space-between;
-    height: 58px;
-    width: 701px;
-    margin: 31px auto 45px;
+    // height: 58px;
+    height: auto;
+    min-width: 300px;
+    max-width: 701px;
+    // width: auto;
+    margin: 31px auto 43px;
     // background-color: black;
   }
+  // 入口按钮方框
   .EntryButton {
     display: inline-flex;
+    overflow-wrap: break-word;
     width: 316px;
     height: 58px;
     justify-content: space-around;
@@ -84,19 +93,24 @@ export default {
     border-width:1px;
     border-color: #999999;
   }
+  // 小图标入口行
   .icons {
     display: flex;
     justify-content: space-between;
     height: 55px;
-    width: 459px;
+    min-width: 300px;
+    max-width: 459px;
+    width: auto;
     margin: 45px auto 0px;
     // background-color: black;
   }
+  // 小图标入口按钮
   .iconsButton {
     height: 55px;
     width: 55px;
     background-color: aqua;
   }
+  // 底边栏行
   .BottomRow {
     position: fixed;
     bottom: 20px;
@@ -104,10 +118,12 @@ export default {
     height: 40px;
     // background-color:black;
   }
+  // 底边栏信息
   .BottomMsg {
     display: inline-flex;
     height: 40px;
-    width: 464px;
+    // width: 464px;
+    width: auto;
     justify-content: space-around;
     align-items: center;
     // background-color:aqua;
