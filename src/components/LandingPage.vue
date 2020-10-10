@@ -10,7 +10,7 @@
     </div>
     <!-- 主页入口选择 -->
     <div class='Entry'>
-      <router-link to="/release">
+      <router-link to="/released">
         <div class='EntryButton'>日常使用工具</div>
       </router-link>
       <router-link to="/beta">

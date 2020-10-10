@@ -11,22 +11,24 @@ const routes = [
     component: LandingPage,
   },
   {
-    path: "/release",
-    name: "Release",
+    path: "/released",
+    name: "ReleasedTools",
     // route level code-splitting
-    // this generates a separate chunk (release.[hash].js) for this route
+    // this generates a separate chunk (ReleasedTools.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () =>
-      import(/* webpackChunkName: "release" */ "../views/Release.vue"),
+      import(
+        /* webpackChunkName: "ReleasedTools" */ "../views/ReleasedTools.vue"
+      ),
   },
   {
     path: "/beta",
-    name: "Beta",
+    name: "BetaTools",
     // route level code-splitting
-    // this generates a separate chunk (beta.[hash].js) for this route
+    // this generates a separate chunk (BetaTools.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () =>
-      import(/* webpackChunkName: "beta" */ "../views/Beta.vue"),
+      import(/* webpackChunkName: "BetaTools" */ "../views/BetaTools.vue"),
   },
 ];
 
