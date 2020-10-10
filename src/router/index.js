@@ -24,12 +24,13 @@ const routes = [
   {
     path: "/beta",
     name: "BetaTools",
-    // route level code-splitting
-    // this generates a separate chunk (BetaTools.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "BetaTools" */ "../views/BetaTools.vue"),
+    component: () => import("../views/BetaTools.vue"),
   },
+  // {
+  //   path: "/user",
+  //   name: "User",
+  //   component: () => import("../views/BetaTools.vue"),
+  // },
 ];
 
 const router = new VueRouter({

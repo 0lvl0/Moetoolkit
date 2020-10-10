@@ -1,8 +1,10 @@
 <template>
   <div class="LandingPage">
+    <!-- 用户头像图标 -->
     <div class='User'>
-      <div></div>
+      <img class='UserIcon' src="../assets/user_icon.png"/>
     </div>
+    <!-- 萌工具Logo -->
     <div class='LogoRow'>
       <div class='MoeLogo'>
         <img class='images' alt="Moe logo" src="../assets/MoeToolkit.svg">
@@ -65,11 +67,15 @@ export default {
     background-color:#999999;
     border-radius: 50px;
   }
-  .LogoRow {
-    width:100%;
+  .UserIcon {
+    width: 100%;
+    height: 100%;
   }
 
   // 主图标
+  .LogoRow {
+    width:100%;
+  }
   .MoeLogo {
     display: flex;
     margin: 100px auto 31px;
