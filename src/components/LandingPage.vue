@@ -10,8 +10,12 @@
     </div>
     <!-- 主页入口选择 -->
     <div class='Entry'>
-      <div class='EntryButton'>这是日常使用工具</div>
-      <div class='EntryButton'>这是测试中的工具</div>
+      <router-link to="/release">
+        <div class='EntryButton'>日常使用工具</div>
+      </router-link>
+      <router-link to="/beta">
+        <div class='EntryButton'>测试中的工具</div>
+      </router-link>
     </div>
     <!-- 小图标排布 -->
     <div class='icons'>
@@ -30,7 +34,7 @@
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'LandingPage',
   props: {
     msg: String
   }
@@ -80,27 +84,28 @@ export default {
   // 入口按钮行
   .Entry {
     display: flex;
-    // flex-flow: column;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    // flex-flow: wrap;
+    justify-content: space-around;
     // height: 58px;
     height: auto;
-    min-width: 300px;
+    min-width: 317px;
     max-width: 701px;
     // width: auto;
-    margin: 31px auto 43px;
+    margin: 21px auto 33px;
     // background-color: black;
   }
 
   // 入口按钮方框
   .EntryButton {
     display: inline-flex;
-    overflow-wrap: break-word;
     width: 316px;
     height: 58px;
     justify-content: space-around;
     align-items: center;
     // background-color: aqua;
     border-style: solid;
+    margin: 10px auto 10px;
     border-width:1px;
     border-color: #999999;
     color: wheat;
